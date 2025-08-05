@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biblioteca Digital</title>
+  <meta name="author" content="CRISTIAN GABRIEL RODRIGUEZ ORTEGA" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .descripcion {
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+      color: #555;
+    }
+    .temas {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .tema-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    .tema-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    .tema-imagen {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .tema-info {
+      padding: 15px 20px;
+    }
+    .tema-titulo {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Biblioteca Digital</h1>
+
+  <div class="descripcion">
+    Bienvenido a la Biblioteca Digital. Explora diferentes áreas del conocimiento a través de libros cuidadosamente seleccionados. Haz clic en una categoría para comenzar.
+  </div>
+
+  <div class="temas">
+
+    <a href="finanzas.html" class="tema-card">
+      <img src="img/finanzas.jpg" alt="Finanzas" class="tema-imagen" />
+      <div class="tema-info">
+        <div class="tema-titulo">💰 Finanzas</div>
+        <p>Aprende a administrar tu dinero, ahorrar, invertir y lograr libertad financiera.</p>
+      </div>
+    </a>
+
+    <a href="tecnologia.html" class="tema-card">
+      <img src="img/tecnologia.jpg" alt="Tecnología" class="tema-imagen" />
+      <div class="tema-info">
+        <div class="tema-titulo">💻 Tecnología</div>
+        <p>Descubre cómo la tecnología transforma nuestro mundo y aprende a dominarla.</p>
+      </div>
+    </a>
+
+    <a href="salud-mental.html" class="tema-card">
+      <img src="img/salud-mental.jpg" alt="Salud Mental" class="tema-imagen" />
+      <div class="tema-info">
+        <div class="tema-titulo">🧠 Salud Mental</div>
+        <p>Conoce cómo cuidar tu mente, manejar el estrés y mejorar tu bienestar emocional.</p>
+      </div>
+    </a>
+
+    <a href="bienestar-fisico.html" class="tema-card">
+      <img src="img/bienestar.jpg" alt="Bienestar Físico" class="tema-imagen" />
+      <div class="tema-info">
+        <div class="tema-titulo">🏃‍♂️ Bienestar Físico</div>
+        <p>Libros sobre salud, nutrición, ejercicio y un estilo de vida activo.</p>
+      </div>
+    </a>
+
+    <a href="psicologia.html" class="tema-card">
+      <img src="img/psicologia.jpg" alt="Psicología" class="tema-imagen" />
+      <div class="tema-info">
+        <div class="tema-titulo">🧬 Psicología</div>
+        <p>Estudia la mente humana, el comportamiento y el desarrollo personal.</p>
+      </div>
+    </a>
+
+    <a href="relaciones.html" class="tema-card">
+      <img src="img/relaciones.jpg" alt="Relaciones" class="tema-imagen" />
+      <div class="tema-info">
+        <div class="tema-titulo">❤️ Relaciones</div>
+        <p>Aprende sobre relaciones de pareja, familia, comunicación y vínculos saludables.</p>
+      </div>
+    </a>
+
+    <a href="redes.html" class="tema-card">
+      <img src="img/redes.jpg" alt="Redes" class="tema-imagen" />
+      <div class="tema-info">
+        <div class="tema-titulo">🌐 Redes</div>
+        <p>Descubre el mundo de las redes sociales, la identidad digital y el networking.</p>
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    Página creada por <strong>CRISTIAN GABRIEL RODRIGUEZ ORTEGA</strong>
+  </footer>
+
+</body>
+</html>

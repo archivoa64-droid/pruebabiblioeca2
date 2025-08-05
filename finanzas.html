@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Educación Financiera</title>
+  <meta name="author" content="CRISTIAN GABRIEL RODRIGUEZ ORTEGA" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .descripcion {
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+      color: #555;
+    }
+    .libros {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .libro-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    .libro-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    .libro-imagen {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .libro-info {
+      padding: 15px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .libro-titulo {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+    .libro-autor {
+      font-size: 15px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+    .libro-link {
+      text-align: center;
+      background-color: #27ae60;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .libro-link:hover {
+      background-color: #1e8449;
+    }
+    .volver {
+      display: block;
+      max-width: 1100px;
+      margin: 40px auto 0 auto;
+      color: #555;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: left;
+    }
+    .volver:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💰 Educación Financiera</h1>
+
+  <div class="descripcion">
+    La educación financiera es fundamental para tomar decisiones informadas sobre el dinero. Aprender a ahorrar, invertir, administrar deudas y planificar el futuro te brinda libertad y tranquilidad. Aquí encontrarás libros recomendados para mejorar tu inteligencia financiera.
+  </div>
+
+  <div class="libros">
+
+    <!-- Padre Rico -->
+    <a href="https://drive.google.com/file/d/1GSuV5veenfV6wFFCfDwNyDqddB_WOALX/view" target="_blank" class="libro-card">
+      <img src="img/padre-rico.jpg" alt="Padre Rico, Padre Pobre" class="libro-imagen" />
+      <div class="libro-info">
+        <div>
+          <div class="libro-titulo">Padre Rico, Padre Pobre</div>
+          <div class="libro-autor">Robert Kiyosaki</div>
+        </div>
+        <div><span class="libro-link">Ver Libro</span></div>
+      </div>
+    </a>
+
+    <!-- Babilonia -->
+    <a href="https://drive.google.com/file/d/1GXOc-k8ObnFR_ZslQ5mYAgqXp_N2l_Uc/view" target="_blank" class="libro-card">
+      <img src="img/hombre-rico-babilonia.jpg" alt="El Hombre Más Rico de Babilonia" class="libro-imagen" />
+      <div class="libro-info">
+        <div>
+          <div class="libro-titulo">El Hombre Más Rico de Babilonia</div>
+          <div class="libro-autor">George S. Clason</div>
+        </div>
+        <div><span class="libro-link">Ver Libro</span></div>
+      </div>
+    </a>
+
+    <!-- Mente Millonaria -->
+    <a href="https://drive.google.com/file/d/1GZAG6ks0CPa91tOYO8ATI4vMJHmlhtKF/view" target="_blank" class="libro-card">
+      <img src="img/mentemillonaria.jpg" alt="Los Secretos de la Mente Millonaria" class="libro-imagen" />
+      <div class="libro-info">
+        <div>
+          <div class="libro-titulo">Los Secretos de la Mente Millonaria</div>
+          <div class="libro-autor">T. Harv Eker</div>
+        </div>
+        <div><span class="libro-link">Ver Libro</span></div>
+      </div>
+    </a>
+
+    <!-- Piense y Hagase Rico -->
+    <a href="https://drive.google.com/file/d/1GxnsPtQ0AsVwhRBOIQoWUNaHn0i2mAgP/view" target="_blank" class="libro-card">
+      <img src="img/piense-hagase-rico.jpg" alt="Piense y Hágase Rico" class="libro-imagen" />
+      <div class="libro-info">
+        <div>
+          <div class="libro-titulo">Piense y Hágase Rico</div>
+          <div class="libro-autor">Napoleon Hill</div>
+        </div>
+        <div><span class="libro-link">Ver Libro</span></div>
+      </div>
+    </a>
+
+    <!-- El Código del Dinero -->
+    <a href="https://drive.google.com/file/d/1HcZxkZqGNeaQhI3LFeOKHX1_AZf2BAyn/view" target="_blank" class="libro-card">
+      <img src="img/codigo-dinero.jpg" alt="El Código del Dinero" class="libro-imagen" />
+      <div class="libro-info">
+        <div>
+          <div class="libro-titulo">El Código del Dinero</div>
+          <div class="libro-autor">Raimon Samsó</div>
+        </div>
+        <div><span class="libro-link">Ver Libro</span></div>
+      </div>
+    </a>
+
+    <!-- Multiplica tu Dinero -->
+    <a href="https://drive.google.com/file/d/1TUbLsdXmpmhzSYE_XYFh1YwU7Zo1m4v2/view" target="_blank" class="libro-card">
+      <img src="img/multiplica-tu-dinero.jpg" alt="Multiplica tu Dinero" class="libro-imagen" />
+      <div class="libro-info">
+        <div>
+          <div class="libro-titulo">Multiplica tu Dinero</div>
+          <div class="libro-autor">Brian Tracy</div>
+        </div>
+        <div><span class="libro-link">Ver Libro</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <a href="index.html" class="volver">⬅ Volver a la página principal</a>
+
+  <footer>
+    Página creada por <strong>CRISTIAN GABRIEL RODRIGUEZ ORTEGA</strong>
+  </footer>
+
+</body>
+</html>
